@@ -14,6 +14,15 @@
     function mainCtrl(){
         
         var vm = this;
+        var headerTemplate = 'app/header/header.tpl.html';
+        
+        vm.appName = "BitBlogger";
+        vm.showAppName = function () {
+            vm.showing = true;
+        };
+        vm.hideAppName = function () {
+            vm.showing = false;
+        };
     }
     
 })()
