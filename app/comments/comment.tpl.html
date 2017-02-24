@@ -1,0 +1,13 @@
+<div ng-controller = "commentCtrl as cm">
+    <div class="panel panel-default">
+        <div class="panel-heading">Comments</div>
+
+
+    </div>
+    <div class="panel-body">
+        <div  ng-repeat="comment in cm.commenting">
+          {{comment.commentid}} : {{comment.commentname}} <hr/>
+            
+        </div>
+</div>
+</div>

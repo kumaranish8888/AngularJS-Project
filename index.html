@@ -1,6 +1,6 @@
 <html ng-app = "bitblogger">
-
-<head>
+    
+    <head>
     <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" >
     <script src="bower_components/angular/angular.js"></script>
     </head>
@@ -8,18 +8,18 @@
     <body>
     <div class="container" ng-controller="mainCtrl as mc" >
         
-        <div ng-include = "'mc.headerTemplate'"></div>
+        <div ng-include = "mc.headerTemplate"></div>
+        
+        <div ng-include = "mc.commentTemplate"></div>
        
-        <button class="btn btn-primary" ng-click="mc.showAppName()">Show</button>
-        <button class="btn btn-primary" ng-click="mc.hideAppName()">Hide</button>
-        <h1 ng-show="mc.showing">{{mc.appName}}</h1>
         
         </div>
-        
-        
-    <script src="app/header/header.js"></script>
+        <script src="app/comments/comment.js"></script>
+        <script src="app/comments/commentCtrl.js"></script>
+        <script src="app/header/header.js"></script>
+        <script src="app/header/headerCtrl.js"></script>
         <script src="app/login/login.js"></script>
         <script src="app/register/register.js"></script>
         <script src="app/app.js"></script>
-    </body>
+    </body> 
 </html>

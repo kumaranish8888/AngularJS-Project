@@ -1,6 +1,6 @@
 (function(){
     
-    angular.module("bitblogger",["login", "header", "register"]);
+   angular.module("bitblogger",["login", "header", "register", "comment"]);
     
     
     angular.module("bitblogger").config([function(){
@@ -14,15 +14,12 @@
     function mainCtrl(){
         
         var vm = this;
-        var headerTemplate = 'app/header/header.tpl.html';
+        vm.headerTemplate = 'app/header/header.tpl.html';
+        vm.commentTemplate = 'app/comments/comment.tpl.html';
         
-        vm.appName = "BitBlogger";
-        vm.showAppName = function () {
-            vm.showing = true;
-        };
-        vm.hideAppName = function () {
-            vm.showing = false;
-        };
-    }
+       
+    } 
+    
+    
     
 })()
