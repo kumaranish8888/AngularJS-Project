@@ -16,6 +16,7 @@
         var vm = this;
         vm.headerTemplate = 'app/header/header.tpl.html';
         vm.commentTemplate = 'app/comments/comment.tpl.html';
+        vm.registerTemplate = "app/register/register.tpl.html";
         
        
     } 
