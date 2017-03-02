@@ -1,30 +1,37 @@
-<html ng-app = "bitblogger">
+<html ng-app="bitblogger">
+
+<head>
+    <title>{{welcome}}</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css" rel="stylesheet">
     
-    <head>
-    <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" >
     <script src="bower_components/angular/angular.js"></script>
-    </head>
-    
-    <body>
-    <div class="container" ng-controller="mainCtrl as mc" >
-        
-        <div ng-include = "mc.headerTemplate"></div>
-        
-        <div ng-include = "mc.commentTemplate"></div>
-        
-        <div ng-include="mc.registerTemplate"></div>
-       
-        
-        </div>
-        <script src="app/comments/comment.js"></script>
-        <script src="app/comments/commentSvc.js"></script>
-        <script src="app/comments/commentCtrl.js"></script>
-        <script src="app/header/header.js"></script>
-        <script src="app/header/headerCtrl.js"></script>
-        <script src="app/login/login.js"></script>
-        <script src="app/register/register.js"></script>
-        <script src="app/register/registerCtrl.js"></script>
-        <script src="app/register/registerSvc.js"></script>
-        <script src="app/app.js"></script>
-    </body> 
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+</head>
+
+<body>
+    <div class="container" ng-controller="mainCtrl as mc">
+
+        <div ng-include="mc.headerTemplate"></div>
+       <div ui-view></div>
+    </div>
+
+    <script src="app/header/header.js"></script>
+    <script src="app/header/headerCtrl.js"></script>
+    <script src="app/login/login.js"></script>
+
+
+    <script src="app/comments/comments.js"></script>
+    <script src="app/comments/commentsSvc.js"></script>
+    <script src="app/comments/commentsCtrl.js"></script>
+
+    <script src="app/posts/posts.js"></script>
+    <script src="app/posts/postsSvc.js"></script>
+    <script src="app/posts/postsCtrl.js"></script>
+
+    <script src="app/register/register.js"></script>
+    <script src="app/register/registerSvc.js"></script>
+    <script src="app/register/registerCtrl.js"></script>
+    <script src="app/app.js"></script>
+</body>
+
 </html>
