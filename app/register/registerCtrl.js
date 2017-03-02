@@ -5,6 +5,7 @@
        // vm.countries = registerSvc.getCountries();
         //make a call to the register service
         //fetch the data from the json
+        console.log(registerSvc);
        registerSvc.getCountriesFromJson()
        .then(function(response){
            console.log(response);
@@ -17,7 +18,7 @@
        
        .finally(function(){
            
-       });
+       }); 
         
 
             
