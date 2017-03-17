@@ -20,6 +20,10 @@
             {
                 "key":"register",
                 "value":"Register"
+            },
+            {
+                "key":"product",
+                "value":"Products"
             }
         ];
         

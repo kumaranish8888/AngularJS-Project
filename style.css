@@ -1,3 +1,11 @@
 .contacts {
     text-align: center;
 }
+
+.displaying {
+    display: inline-block;
+}
+
+.h {
+    color: blue;
+}
