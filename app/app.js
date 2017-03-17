@@ -1,6 +1,6 @@
 (function(){
     
-   angular.module("bitblogger",["login", "header", "register", "comment"]);
+   angular.module("bitblogger",["login", "header", "register", "comments", "ui.router"]);
     
     
     angular.module("bitblogger").config([function(){
