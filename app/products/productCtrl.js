@@ -7,7 +7,8 @@
         var pc = this;
         
         productSvc.getProducts().then(function(response){
-            pc.myProducts = response.data.products;
+            
+            pc.myProducts = response;
             
         }).catch(function(response){
             
