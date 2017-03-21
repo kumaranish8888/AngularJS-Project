@@ -1,14 +1,14 @@
 (function(){
     
-    angular.module("posts").controller("postsCtrl", ["postsSvc", postsCtrl]);
+    angular.module("posts").controller("postsCtrl", ["postsSvc", "$scope", postsCtrl]);
     
-    function postsCtrl(postsSvc){
+    function postsCtrl(postsSvc, $scope){
         
         var pm = this;
         
         postsSvc.getPosts().then(function(response){
             
-            pm.myPosts = response.data.posts;
+            $scope.myPosts = response;
             
         }).catch(function(response){
             
