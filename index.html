@@ -7,7 +7,13 @@
     </head>
 
     <body ng-controller="mainCtrl as mc" class="container">
-        <div ng-include="mc.headerTemplate"></div>
+        
+        <second-dir></second-dir>
+        
+        <div second-dir></div>
+        
+        <div class="second-dir"></div>
+      <!--  <div ng-include="mc.headerTemplate"></div> -->
         
         <div ui-view></div>
       <!--  <div ng-include="mc.registerTemplate"></div>
@@ -39,5 +45,7 @@
         <script src="app/products/productSvc.js"></script>
         
         <script src="app/message/message.js"></script>
+        
+        <script src="app/common/common.js"></script>
     </body>
 </html>

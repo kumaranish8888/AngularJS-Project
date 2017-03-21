@@ -6,11 +6,12 @@
         <th><h3>Model</h3></th>
     </tr>
   </thead>
-  <tbody ng-repeat="product in pc.myProducts">
+  <tbody ng-repeat="product in myProducts">
     <tr>
         <td><h4>{{product.index}}</h4></td>
         <td><h4>{{product.Price}}</h4></td>
         <td><h4>{{product.Model}}</h4></td>
+        <td><button class="btn btn-primary" ng-click="pc.addItem(product)">Add to Cart</button></td>
     </tr>
     
   </tbody>

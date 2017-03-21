@@ -1,6 +1,6 @@
 (function(){
     
-    angular.module("project", ["header", "register", "posts", "ui.router", "contact", "login", "product", "message"]);
+    angular.module("project", ["header", "register", "posts", "ui.router", "contact", "login", "product", "message", "common"]);
     
     angular.module("project").controller("mainCtrl", [mainCtrl]);
     
